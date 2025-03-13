@@ -1,0 +1,128 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: white;
+    color:black;
+  }
+  
+  /* Container */
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #222;
+    padding: 15px 20px;
+    color: white;
+  }
+  
+  .navbar .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .navbar .logo h1 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar ul li {
+    margin: 0 15px;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: 0.3s;
+  }
+  
+  .navbar ul li a:hover {
+    background: #555;
+    border-radius: 5px;
+  }
+  
+  /* Main Section */
+  .main {
+    padding: 30px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  
+  .main-top {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  /* Attendance Records Table */
+  .attendance-records table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .attendance-records th, .attendance-records td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .attendance-records th {
+    background: #222;
+    color: white;
+  }
+  
+  .attendance-records tr:nth-child(even) {
+    background: #f9f9f9;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .navbar ul {
+      flex-direction: column;
+    }
+  
+    .navbar ul li {
+      margin-bottom: 10px;
+    }
+  
+    .main {
+      padding: 20px;
+    }
+    
+    .attendance-records table {
+      font-size: 14px;
+    }
+  }
